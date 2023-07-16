@@ -1,0 +1,42 @@
+@import './base.css';
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),   
+  url(../font/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+
+html {
+
+  background-color: var(--back-color);
+  padding: 0;
+  margin: 0;
+  font-family:'Poppins' ;
+ 
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+ 
+}
+nav{
+  background-color: var(--first-color);
+}
+
+button{
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+button:active{
+  scale:0.95;
+}
+h1 {
+  color : var(--first-color)
+}
+p {
+  color  : var(--first-color)
+}

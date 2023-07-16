@@ -1,0 +1,26 @@
+version: '3.8'
+services:
+  backend:
+    env_file: .env
+    build: ./backend
+    image: snaike7/server
+    container_name: backend_c
+    ports:
+      - 8081:8081
+    volumes:
+      - ./:/src
+    stdin_open: true
+    tty: true
+  frontend :
+    build: ./frontend
+    image: snaike7/myapp
+    container_name: frontend_c
+    ports:
+      - 8080:8080
+    tty: true
+    volumes:
+    - ./:/src
+    
+  
+
+
